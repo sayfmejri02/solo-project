@@ -89,18 +89,4 @@ $('#buy-now-btn').click(function () {
 
 displayPhones()
 
-function each(array, func) {
-  for (let i = 0; i < array.length; i++) {
-    func(array[i], i);
-  }
-}
 
-function filter(array, predicate) {
-  var acc = [];
-  each(array, function (element, i) {
-    if (predicate(element, i)) {
-      acc.push(element);
-    }
-  });
-  return acc;
-}
